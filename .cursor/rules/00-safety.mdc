@@ -1,0 +1,84 @@
+---
+description: Safety and change-control rules for WordPress, Elementor and EMCP.
+alwaysApply: true
+---
+
+# WordPress / EMCP Safety Rules
+
+This WordPress installation is managed through the EMCP MCP server.
+
+## General safety
+
+- Use EMCP MCP tools for WordPress and Elementor changes.
+- Inspect before modifying.
+- Never guess the current page structure.
+- Before modifying an existing Elementor page, inspect its structure first.
+- Before modifying an existing widget, inspect its current settings first.
+- Never invoke destructive tools unless the user explicitly requests the destructive action.
+- Never delete pages, templates, media, products, users or settings without explicit user approval.
+- Never use direct database writes.
+- Never use filesystem writes.
+- Never use WP-CLI.
+- Never install, update, deactivate or remove plugins or themes unless explicitly requested.
+- Never create or activate PHP snippets unless explicitly requested.
+- Never modify WordPress core files.
+
+## Publishing
+
+New pages and templates must be created as drafts first.
+
+Do not publish:
+- pages
+- headers
+- footers
+- Theme Builder templates
+- WooCommerce templates
+
+until they have passed visual QA or the user explicitly requests publication.
+
+## Elementor discovery
+
+Never invent Elementor control names.
+
+Before using an unfamiliar widget:
+1. Discover the available widget.
+2. Read its schema.
+3. Use only controls returned by the schema.
+
+If an Elementor setting appears not to work, inspect the schema instead of guessing alternative setting names.
+
+## Minimal change principle
+
+When correcting an existing page:
+- update only the affected elements;
+- do not regenerate the entire page unless specifically requested;
+- preserve unrelated content and settings.
+
+## Code
+
+Prefer native Elementor functionality.
+
+Priority:
+1. Elementor Core
+2. Elementor Pro
+3. WooCommerce widgets
+4. Existing approved plugins
+5. Custom CSS
+6. Custom HTML/JavaScript
+
+Custom code is a last resort.
+
+## WooCommerce
+
+WooCommerce read operations are permitted.
+
+Do not create, update or delete:
+- products
+- orders
+- customers
+- coupons
+- tax rules
+- payment settings
+- shipping settings
+
+unless explicitly instructed.

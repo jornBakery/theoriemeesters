@@ -1,0 +1,234 @@
+{
+  "$schema": "internal/brand-tokens-v2",
+  "brand": {
+    "name": "Theoriemeesters.nl",
+    "tagline": {
+      "text": "We leiden je op, om met kennis te slagen.",
+      "source": "observed"
+    },
+    "market": "Nederland",
+    "language": "nl-NL"
+  },
+  "colors": {
+    "color-navy": {
+      "hex": "#01203F",
+      "source": "observed",
+      "confidence": "high",
+      "usage": ["headings", "logo wordmark", "footer background", "primary text on light surfaces"]
+    },
+    "color-sky": {
+      "hex": "#54A3D8",
+      "source": "observed",
+      "confidence": "high",
+      "usage": ["logo .nl", "links", "secondary button border/text", "badges"]
+    },
+    "color-sky-light": {
+      "hex": "#81BBE1",
+      "source": "observed",
+      "confidence": "medium",
+      "usage": ["logo accents", "hover (TBD)"]
+    },
+    "color-yellow": {
+      "hex": "#F1CA0A",
+      "source": "observed",
+      "confidence": "high",
+      "usage": ["primary buttons", "cart actions", "cart count badge"]
+    },
+    "color-yellow-hover": {
+      "hex": "#F6D22D",
+      "source": "observed",
+      "confidence": "medium",
+      "usage": ["primary button hover (TBD)"]
+    },
+    "color-white": {
+      "hex": "#FFFFFF",
+      "source": "observed",
+      "confidence": "high",
+      "usage": ["header surfaces", "cards", "inputs"]
+    },
+    "color-page": {
+      "hex": "#F4F7FA",
+      "source": "inferred",
+      "confidence": "medium",
+      "usage": ["page canvas behind white sections (desktop mockup)"]
+    },
+    "color-panel": {
+      "hex": "#E8EEF4",
+      "source": "inferred",
+      "confidence": "medium",
+      "usage": ["mid-page USP feature panel background"]
+    },
+    "color-border": {
+      "hex": "#DEDEDE",
+      "source": "inferred",
+      "confidence": "medium",
+      "usage": ["inputs", dividers"]
+    },
+    "color-text": {
+      "hex": "#01203F",
+      "source": "inferred",
+      "confidence": "medium",
+      "usage": ["body on white—often same navy as headings in mockup"]
+    },
+    "color-text-muted": {
+      "hex": "#5A6572",
+      "source": "inferred",
+      "confidence": "low",
+      "usage": ["secondary paragraphs—exact gray not measured"]
+    },
+    "color-text-inverse": {
+      "hex": "#FFFFFF",
+      "source": "observed",
+      "confidence": "high",
+      "usage": ["footer text", "text on navy"]
+    },
+    "color-success": {
+      "hex": null,
+      "source": "unresolved",
+      "confidence": "low",
+      "usage": ["Trustpilot stars and checklist marks—use platform/widget defaults until sampled"]
+    }
+  },
+  "spacing": {
+    "space-1": { "px": 4, "confidence": "medium" },
+    "space-2": { "px": 8, "confidence": "medium" },
+    "space-3": { "px": 16, "confidence": "medium" },
+    "space-4": { "px": 24, "confidence": "medium" },
+    "space-5": { "px": 32, "confidence": "medium" },
+    "space-6": { "px": 48, "confidence": "medium" },
+    "space-7": { "px": 64, "confidence": "medium" },
+    "space-8": { "px": 80, "confidence": "medium" }
+  },
+  "layout": {
+    "layout-content-width": { "px": 1200, "confidence": "medium" },
+    "layout-gutter": { "token": "space-4", "confidence": "medium" },
+    "layout-section-padding": { "token": "space-7", "confidence": "medium" },
+    "layout-section-padding-hero": { "token": "space-8", "confidence": "medium" },
+    "layout-grid-gap": { "token": "space-4", "confidence": "medium" }
+  },
+  "radius": {
+    "radius-sm": { "px": 8, "confidence": "medium", "usage": ["buttons", "inputs", "cards", "panels"] },
+    "radius-pill": { "px": 999, "confidence": "high", "usage": ["product badges", "circular carousel controls"] }
+  },
+  "typography": {
+    "family": {
+      "status": "unconfirmed",
+      "category": "sans-serif",
+      "confidence": "high",
+      "candidates": [
+        { "name": "Montserrat", "confidence": "low" },
+        { "name": "Open Sans", "confidence": "low" }
+      ],
+      "note": "Do not set Elementor globals until client confirms."
+    },
+    "tokens": {
+      "text-display": { "sizePx": 40, "weight": 700, "lineHeight": 1.15, "confidence": "medium" },
+      "text-h1": { "sizePx": 38, "weight": 700, "lineHeight": 1.2, "confidence": "medium" },
+      "text-h2": { "sizePx": 30, "weight": 700, "lineHeight": 1.25, "confidence": "medium" },
+      "text-h3": { "sizePx": 22, "weight": 600, "lineHeight": 1.3, "confidence": "medium" },
+      "text-body": { "sizePx": 16, "weight": 400, "lineHeight": 1.6, "confidence": "medium" },
+      "text-body-sm": { "sizePx": 14, "weight": 400, "lineHeight": 1.5, "confidence": "medium" },
+      "text-nav": { "sizePx": 16, "weight": 600, "lineHeight": 1.2, "confidence": "medium" },
+      "text-button": { "sizePx": 16, "weight": 700, "lineHeight": 1, "confidence": "medium" },
+      "text-caption": { "sizePx": 12, "weight": 400, "lineHeight": 1.4, "confidence": "medium" }
+    }
+  },
+  "components": {
+    "registry": [
+      {
+        "id": "comp-btn-primary",
+        "description": "Yellow filled button with dark text and chevron"
+      },
+      {
+        "id": "comp-btn-secondary",
+        "description": "White button, sky border and text"
+      },
+      {
+        "id": "comp-btn-cart",
+        "description": "Small yellow square add-to-cart control on product card"
+      },
+      {
+        "id": "comp-link-cta",
+        "description": "Sky text link aligned right of section titles (e.g. Bekijk alle …)"
+      },
+      {
+        "id": "comp-section-heading",
+        "description": "Section title row: H2 left + optional comp-link-cta right"
+      },
+      {
+        "id": "comp-card-product",
+        "description": "Product tile: image, optional badge, title, price, comp-btn-cart"
+      },
+      {
+        "id": "comp-carousel-products",
+        "description": "comp-section-heading + horizontal product carousel (4-up)"
+      },
+      {
+        "id": "comp-usp-utility-bar",
+        "description": "Header top bar: 3 short USPs with check/icon"
+      },
+      {
+        "id": "comp-usp-checklist",
+        "description": "Row or list of items with green check + single line label"
+      },
+      {
+        "id": "comp-usp-feature-panel",
+        "description": "Rounded panel on page canvas: 5 columns, icon + title + description"
+      },
+      {
+        "id": "comp-usp-trust-strip",
+        "description": "Footer navy band: 4 columns, white icon + short text"
+      },
+      {
+        "id": "comp-input-search",
+        "description": "Header product/site search field with icon"
+      },
+      {
+        "id": "comp-form-newsletter",
+        "description": "Email field + yellow submit (footer)"
+      },
+      {
+        "id": "comp-badge-choice",
+        "description": "Sky pill badge e.g. Meest gekozen"
+      },
+      {
+        "id": "comp-badge-cart-count",
+        "description": "Yellow circular count on cart icon"
+      },
+      {
+        "id": "comp-block-trustpilot",
+        "description": "Trustpilot rating embed"
+      },
+      {
+        "id": "comp-block-testimonial",
+        "description": "Single quote with author + carousel controls"
+      },
+      {
+        "id": "comp-block-steps",
+        "description": "Numbered step list (Hoe het werkt column)"
+      },
+      {
+        "id": "comp-grid-info-4",
+        "description": "Four-column band: steps | Trustpilot | testimonial | checklist"
+      },
+      {
+        "id": "comp-nav-primary",
+        "description": "Main horizontal nav with dropdowns"
+      },
+      {
+        "id": "comp-nav-utility",
+        "description": "Klantenservice, Inloggen, account/cart icons"
+      }
+    ]
+  },
+  "logo": {
+    "primary_asset": "brand/logos/logo.png",
+    "icon_asset": "brand/logos/favicon.svg",
+    "variants_required": [
+      { "id": "lockup-full", "status": "available" },
+      { "id": "lockup-header", "status": "required_not_supplied", "note": "Icon + wordmark, no tagline" },
+      { "id": "lockup-footer-white", "status": "required_not_supplied", "note": "White wordmark shown on mockup footer" },
+      { "id": "icon-only", "status": "available", "path": "brand/logos/favicon.svg" }
+    ]
+  }
+}

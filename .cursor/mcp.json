@@ -1,0 +1,7 @@
+{
+    "mcpServers": {
+      "emcp-tools": {
+        "url": "https://tm.jhbdesigns.nl/wp-json/mcp/emcp-tools-server"
+      }
+    }
+  }

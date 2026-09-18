@@ -1,0 +1,115 @@
+---
+description: Elementor architecture and implementation standards for all generated pages and templates.
+alwaysApply: true
+---
+
+# Elementor Build Standards
+
+## Layout
+
+Use Elementor Flexbox Containers.
+
+Do not use legacy Sections or Columns.
+
+Prefer a shallow and understandable DOM structure.
+
+Do not create unnecessary nested containers.
+
+Every major visual section should have its own top-level container.
+
+## Global design system
+
+Always prefer Elementor Global Colors and Global Typography.
+
+Never repeatedly hard-code a color or typography value when a corresponding global token exists.
+
+Before building pages, read:
+
+@specifications/design-system.md
+@specifications/components.md
+
+Use these specifications as the implementation source of truth.
+
+## Containers
+
+Use consistent content widths from the design system.
+
+Use responsive padding and gap settings.
+
+Do not compensate for incorrect structure using arbitrary margins.
+
+Prefer:
+- container gap
+- padding
+- flex alignment
+
+over negative margins.
+
+## Typography
+
+Use global typography styles whenever possible.
+
+Respect:
+- font family
+- weight
+- line height
+- letter spacing
+- responsive font sizes
+
+from the approved design system.
+
+## Components
+
+Reuse visual patterns.
+
+Examples:
+- buttons
+- product cards
+- badges
+- USP items
+- headings
+- icon/text combinations
+- CTA blocks
+
+Do not independently redesign the same component on different pages.
+
+## Widgets
+
+Prefer native widgets.
+
+Before using an unfamiliar widget, inspect its schema through EMCP.
+
+Do not emulate an existing Elementor widget with an HTML widget.
+
+## Responsive
+
+Every implementation must be checked at:
+
+Desktop
+Tablet
+Mobile
+
+Use Elementor responsive overrides rather than creating duplicate sections purely for different viewport sizes unless the design fundamentally requires different markup.
+
+## Images
+
+Maintain the aspect ratio defined by the design.
+
+Do not stretch source images.
+
+Use WordPress Media Library assets.
+
+Always provide appropriate alt text when meaningful.
+
+## WooCommerce
+
+Use WooCommerce and Elementor Pro dynamic widgets for dynamic commerce content.
+
+Do not hard-code:
+- product names
+- product prices
+- product images
+- stock state
+- add-to-cart URLs
+
+inside product templates when dynamic data is available.

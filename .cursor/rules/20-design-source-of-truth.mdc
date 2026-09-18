@@ -1,0 +1,70 @@
+---
+description: Defines how approved mockups and design specifications must be interpreted.
+alwaysApply: true
+---
+
+# Design Source of Truth
+
+The supplied mockups define the intended visual result.
+
+The specification files define the technical implementation.
+
+## Workflow
+
+Never immediately build a page from a mockup.
+
+First analyse the supplied mockups.
+
+Then create or update:
+
+- specifications/design-system.md
+- specifications/components.md
+- specifications/pages/<page>.md
+
+Only after the design specification exists may implementation begin.
+
+## Mockup analysis
+
+Analyse:
+
+- page sections
+- content hierarchy
+- colors
+- typography
+- spacing
+- container widths
+- alignment
+- image ratios
+- border radii
+- shadows
+- button styles
+- responsive behavior
+- reusable components
+- Elementor widget candidates
+
+Do not invent invisible behavior from a static screenshot.
+
+If something cannot reasonably be determined from the mockup, document the assumption.
+
+## Responsive mockups
+
+When desktop, tablet and mobile mockups are supplied, consider all of them before implementation.
+
+Do not simply scale the desktop design down.
+
+Identify:
+- stacking changes
+- hidden elements
+- navigation changes
+- image changes
+- spacing changes
+- typography changes
+- reordered content
+
+## Conflict resolution
+
+Approved design-system specifications take precedence for implementation details.
+
+Mockups remain the visual reference for final QA.
+
+Do not silently alter the intended design because another layout would be easier to implement.
